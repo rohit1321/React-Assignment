@@ -2,8 +2,9 @@
 import { useContext } from 'react';
 import { AuthContext } from '../auth/AuthContext';
 
+//  this one is my dashboard page  and currently not used any pacakage for icons
 const DashboardPage = () => {
-  const { user } = useContext(AuthContext);
+  const { user } = useContext(AuthContext);  // this i used for   access user name 
   return (
     <section className='p-3 text-center mt-4'>
       <h3>Wellcome Back, {user?.username}</h3>

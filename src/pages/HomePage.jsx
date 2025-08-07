@@ -2,6 +2,7 @@ import  { useContext } from 'react';
 import { AuthContext } from '../auth/AuthContext';
 import CardComponent from './cardComponent';
 
+// this one is my home component and currently not used any pacakage for icons
 const HomePage = () => {
   const {  user } = useContext(AuthContext);
 

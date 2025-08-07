@@ -2,11 +2,12 @@ import { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../auth/AuthContext';
 
+// this is my login page
 const LoginPage = () => {
-  const { login } = useContext(AuthContext);
+  const { login } = useContext(AuthContext); 
   const navigate = useNavigate();
 
-  const [form, setForm] = useState({ username: '', password: '' });
+  const [form, setForm] = useState({ username: '', password: '' });  // this i used for setup a user data
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
@@ -16,9 +17,9 @@ const LoginPage = () => {
     setError('');
 
     try {
-      await login(form);
+      await login(form); // this one is send my data to  AuthContext for verifying crendential
       alert('Login successful!');
-      navigate('/home');
+      navigate('/home'); // if it true i direcly navigate them to home page
     } catch (err) {
       setError(err.message);
     } finally {
