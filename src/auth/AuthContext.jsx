@@ -10,7 +10,7 @@ export const AuthProvider = ({ children }) => {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         if (username === 'admin' && password === 'password') {
-          const fakeToken = 'mock-jwt-token';
+          const fakeToken = 'mockjwttoken';
           const userInfo = { username };
 
           localStorage.setItem('token', fakeToken);
