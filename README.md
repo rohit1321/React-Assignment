@@ -1,12 +1,45 @@
-# React + Vite
+# React Assignment 
+# Protected Routes with Token-Based Authentication
+**Objective**
+Create a React application with a basic authentication flow:
+Users must log in to access protected routes.
+Upon successful login, the app stores an access token.
+Once logged in, the user cannot revisit the login page unless they log out.
+If not logged in, the user cannot access protected routes (e.g., Home, Dashboard).
+Include a logout feature that clears the token and redirects to the login page.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Clone the repo**:
 
-## Expanding the ESLint configuration
+```bash
+git clone https://github.com/rohit1321/React-Assignment.git
+cd React-Assignment
+```
+2. Install dependencies
+```bash
+npm install
+```
+3. npm run dev
+```bash
+npm run dev
+```
+4. Dummy Credentials for Login
+```bash
+Username: admin
+Password: password
+```
+5. Technologies 
+```bash
+React v19.1.0
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+React DOM v19.1.0
+
+React Router DOM v7.7.1
+
+Bootstrap v5 (via CDN or npm)
+
+JWT (mocked) for auth simulation
+
+
